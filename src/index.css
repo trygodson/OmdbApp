@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+body,
+html {
+  /* color: rgb(0, 0, 0); */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Change the white to any color */
+.login input[type="text"],
+.login input[type="password"] {
+  background: #fff !important;
+  height: 50px;
+  padding: 16px 12px;
+  width: 100%;
+}
+
+.login .transparent-bg {
+  background: transparent !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fff inset !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  /* @apply bg-primary */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition: all 0.5s ease-in-out;
+  @apply bg-primary/80;
+}
+
+.active-link {
+  /* @apply bg-primary/20 rounded-md; */
+}
+
+.active-link:hover {
+  /* @apply !bg-primary/20; */
+}
+
+.active-link > div span {
+  @apply !text-primary font-bold;
+}
