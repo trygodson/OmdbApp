@@ -161,7 +161,7 @@ function Home() {
               <div className="col-span-1">
                 <input
                   value={values.plot}
-                  placeholder={'E.g full or half'}
+                  placeholder={'Plot E.g full or half'}
                   type="text"
                   className={`bg-white !h-full !w-full rounded  !py-[1px] text-sm border outline-none focus:border-primary`}
                   {...getFieldProps('plot')}
